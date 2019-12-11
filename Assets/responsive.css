@@ -1,0 +1,309 @@
+/*This CSS file is for applying breakpoints to different elements*/
+
+/*Setting up Breakpoints*/
+/*Extra Large Screen*/
+@media (max-width: 1224px) {
+
+}
+
+/*Large Screen*/
+@media (max-width: 1024px) {
+
+}
+
+/*Medium Screens*/
+@media (max-width: 992px) {
+
+}
+
+/*Tablets and Landscape*/
+@media (max-width: 896px) {
+
+}
+
+/*Smart-phones*/
+@media (max-width: 768px) {
+
+    /*Navigation Section Styling*/
+
+    .nav-panel{
+        display: none;
+    }
+
+    .nav-panel .row {
+        margin-top: 1em;
+    }
+
+    .nav-panel .row .col {
+        padding: 0 2em;
+
+    }
+
+    .nav-panel .row .col h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-panel .row .col .drop div {
+        height: .05em;
+        width: 1.5em;
+    }
+
+    .nav-panel .column-small {
+
+        width: 100%;
+        text-align: center;
+        margin-top: 8em;
+        display: block;
+    }
+
+    .nav-panel .column-small h3 {
+        margin-top: 3em;
+    }
+
+    .nav-panel .column-small h3 a {
+        text-decoration: none;
+        font-weight: lighter;
+        color: black;
+    }
+
+    .nav-panel .column {
+        display: none;
+    }
+
+    /*NavigationBar Styling*/
+    nav {
+        margin-top: 0;
+        position: fixed;
+        right: 0;
+        width: 4em;
+        height: 100vh;
+        background-color: rgb(218, 223, 225);
+        display: block;
+
+    }
+
+    nav .burger {
+        display: inline;
+        float: right;
+        border-radius: .5em;
+        transition: ease-in-out .25s;
+        margin-right: .2em;
+        margin-top: 2em;
+
+    }
+
+    nav .burger .line {
+        width: 2em;
+        height: .2em;
+        background-color: #96281b;
+        margin: .2em .8em .2em .8em;
+        transition: ease-in-out .25s;
+
+    }
+
+    nav .burger:hover #line4 {
+        transform: rotate(0deg) translate(0,0);
+        width: 2em;
+    }
+
+    nav .burger:hover #line6 {
+        transform: rotate(0deg) translate(0,0);
+        width: 2em;
+    }
+
+    nav .burger:hover #line5 {
+        transform: translate(0, 0);
+
+    }
+
+    nav img {
+        width: 3em;
+        height: 7em;
+        margin-left: .5em;
+        margin-top: 10em;
+        margin-right: 1em;
+
+    }
+
+    nav button {
+        margin-top: 14em;
+        border: none;
+        background-color: transparent;
+        margin-left: .4em;
+        color: #96281b;
+        font-weight: bolder;
+        outline: none;
+    }
+
+    /*Banner Styling*/
+    .banner{
+        display: none;
+    }
+
+    .banner-small{
+        display: block;
+    }
+
+    /*About Us Section*/
+    .about {
+        width: inherit;
+        height: 80vh;
+    }
+
+    .about h1 {
+        padding: 0 3.2em 0 1em;
+        font-family: 'Bad Script', cursive;
+        font-size: 2em;
+    }
+
+    .about p {
+        padding: 0 8em 0 3em;
+        font-size: .9em;
+        letter-spacing: .1em;
+        margin-bottom: 0;
+
+    }
+
+    /*Banner 2 Section*/
+    .banner-2 {
+        height: 50vh;
+    }
+
+    /*Life-Style Section*/
+    .life-style {
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .life-style .head h1 {
+        margin-top: 2em;
+        line-height: .1em;
+        padding-left: 2em;
+        padding-right: 2.5em;
+        font-family: 'Quicksand', sans-serif;
+        cursor: default;
+        font-size: 2em;
+    }
+
+    .life-style .head hr {
+        width: 16em;
+        margin-left: 5em;
+        margin-top: 2em;
+        margin-bottom: 3em;
+
+    }
+
+    .life-style .head:hover hr {
+        margin-left: 5em;
+        width: 16em;
+        transform: translateX(0);
+    }
+
+    .life-style .content {
+        width: 100%;
+        height: inherit;
+        display: block;
+
+    }
+
+    .content .row {
+        width: 100%;
+        height: inherit;
+    }
+
+    /*Card Section*/
+
+    .content .row .col .card {
+        width: 100%;
+        height: inherit;
+        cursor: pointer;
+    }
+
+    .content .row .col .card .card-img img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .content .row .col .card .card-content {
+        padding: .5em 2em .5em 2em;
+        margin-bottom: 3em;
+
+    }
+
+    .content .row .col .card .card-content hr {
+        margin-left: 2em;
+        width: 16em;
+    }
+
+    .content .row .col .card .card-content:hover {
+
+        background-color: transparent;
+    }
+
+    .content .row .col .card .card-content:hover hr {
+        margin-left: 2em;
+        width: 16em;
+        transform: translateX(0);
+    }
+
+    .content .row .col .card .card-content h2 {
+        font-size: 1.5em;
+    }
+
+    .content .row .col .card .card-content p {
+        font-size: .9em;
+        margin-left: .2em;
+    }
+
+    /*Glossary Section*/
+
+    .glossary {
+        width: 100%;
+        height: 36em;
+        background: url("Glossary.png") fixed no-repeat;
+        background-size: cover;
+
+    }
+
+
+    .glossary .row .col {
+        display: block;
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .glossary .row #col-1 {
+        width: 100%;
+    }
+
+    .glossary .row #col-2 {
+        width: 100%;
+        background-color: rgba(171, 183, 183, 0.6);
+        height: inherit;
+    }
+
+    .glossary .row #col-2 .form-container input {
+        font-family: 'Quicksand', sans-serif;
+        padding: .5em 3em .5em 3em;
+        margin-top: .5em;
+        border: none;
+        font-weight: bold;
+        border-radius: .5em;
+    }
+
+    .glossary .row #col-2 .form-container input[type=submit] {
+        background-color: rgb(108, 122, 137);
+        padding: .7em 4em .7em 4em;
+        color: rgb(210, 215, 211);
+        transition: ease-in-out .5s;
+    }
+
+    .glossary .row #col-2 .form-container input[type=submit]:hover {
+        background-color: transparent;
+        padding: .6em 4em .6em 4em;
+        color: rgb(108, 122, 137);
+        border: .1em solid rgb(108, 122, 137);
+    }
+
+}

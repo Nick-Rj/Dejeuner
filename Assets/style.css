@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/*Body Section*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation Panel Section*/
+.nav-panel {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(210, 215, 211);
+    z-index: 6;
+    display: none;
+}
+
+.nav-panel .row {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.nav-panel .row .col {
+    padding: 0 5em;
+    width: 50%;
+
+}
+
+.nav-panel .row .col h1 {
+    padding-top: 2em;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+}
+
+.nav-panel .row .col .drop {
+    display: inline;
+    position: absolute;
+    right: 3em;
+    transform: translateY(-1em);
+}
+
+.nav-panel .row .col .drop div {
+    height: .1em;
+    width: 3em;
+    background-color: black;
+    transition: ease-in-out .5s;
+}
+
+.nav-panel .row .col .drop .line-1 {
+    transform: rotate(45deg);
+}
+
+.nav-panel .row .col .drop .line-2 {
+    transform: rotate(-45deg);
+}
+
+.nav-panel .row .col a:hover .line-1 {
+    transform: rotate(0deg);
+}
+
+.nav-panel .row .col a:hover .line-2 {
+    transform: rotate(0deg);
+}
+
+.nav-panel .column-small {
+    display: none;
+}
+
+.nav-panel .column {
+    display: inline;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.nav-panel .column h2, p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+.nav-panel .column h2, p a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+/*NavigationBar Styling*/
+nav {
+    position: fixed;
+    right: 2em;
+    width: 5em;
+    height: 36em;
+    background-color: rgba(218, 223, 225, .7);
+    display: none;
+
+}
+
+nav .burger {
+    display: inline;
+    float: right;
+    border-radius: .5em;
+    transition: ease-in-out .25s;
+    margin-right: .5em;
+    margin-top: 2em;
+
+}
+
+nav .burger .line {
+    width: 2em;
+    height: .2em;
+    background-color: #96281b;
+    margin: .2em .8em .2em .8em;
+    transition: ease-in-out .25s;
+
+}
+
+nav .burger:hover #line4 {
+    transform: rotate(45deg) translate(.4em, 1.2em);
+    width: 1em;
+}
+
+nav .burger:hover #line6 {
+    transform: rotate(-45deg) translate(.4em, -1.2em);
+    width: 1em;
+}
+
+nav .burger:hover #line5 {
+    transform: translate(-.2em, 0);
+
+}
+
+nav img {
+    width: 3em;
+    height: 7em;
+    margin-left: 1em;
+    margin-top: 10em;
+
+}
+
+nav button {
+    margin-top: 14em;
+    border: none;
+    background-color: transparent;
+    margin-left: .4em;
+    color: #96281b;
+    font-weight: bolder;
+}
+
+/*Main Container*/
+.container-fluid {
+    width: 99vw;
+    height: 100vh;
+
+}
+
+/*Banner Section*/
+
+.banner-small{
+    background: url("banner-small.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: none;
+
+}
+
+.banner-small ul{
+    margin: 0;
+    padding-top: 5em;
+    padding-right: 5em;
+    color: #b0b0b0;
+    list-style-type: none;
+
+}
+
+.banner-small ul li{
+    font-size: 1.5em;
+    padding-top: 2em;
+    font-family: 'Bad Script', cursive;
+    font-weight: lighter;
+}
+
+.banner {
+    background: url("banner-1-o.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+.banner .transparent {
+    width: inherit;
+    height: 100%;
+    opacity: .8;
+
+}
+
+.banner .transparent .rect {
+    height: 100%;
+    background: url("Logo-Section.png") center no-repeat;
+    background-size: cover;
+}
+
+.banner .transparent .logo {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    padding-top: 20em;
+    padding-left: 4em;
+}
+
+.banner .transparent .logo img {
+    width: 12em;
+    height: 7em;
+}
+
+#logo1 {
+    z-index: 1;
+    color: #45CE30;
+    font-weight: lighter;
+}
+
+#logo2 {
+    z-index: 2;
+    color: #FFF222;
+    opacity: .7;
+    font-weight: normal;
+}
+
+#logo3 {
+    z-index: 3;
+    color: #DAE0E2;
+    opacity: .3;
+    font-weight: bold;
+}
+
+#logo4 {
+    z-index: 4;
+    color: #EA7773;
+    opacity: .2;
+    font-weight: bolder;
+}
+
+/*Navigation Styling*/
+
+.nav {
+    position: absolute;
+    top: 2em;
+    right: 5em;
+}
+
+.nav button {
+    display: inline;
+    border-radius: .5em;
+    padding: 1em 1.5em 1em 1.5em;
+    border: none;
+    margin-right: .5em;
+    background-color: #E8290B;
+    color: whitesmoke;
+    transition: ease-in-out .5s;
+    font-size: 1em;
+    outline: none;
+
+}
+
+.nav button:hover {
+    background-color: transparent;
+    border: .1em solid #E8290B;
+    padding: .9em 1.4em .9em 1.4em;
+    color: #E8290B;
+}
+
+.nav .burger {
+    display: inline;
+    float: right;
+    border: 2px solid #D63031;
+    border-radius: .5em;
+    transition: ease-in-out .25s;
+
+}
+
+.nav .burger .line {
+    width: 2em;
+    height: .2em;
+    background-color: #D63031;
+    margin: .55em .8em .55em .8em;
+    transition: ease-in-out .25s;
+
+}
+
+.nav .burger:hover {
+
+}
+
+.nav .burger:hover .line {
+    /*margin: .7em .8em .7em .8em;*/
+}
+
+.nav .burger:hover #line1 {
+    transform: rotate(45deg) translate(.4em, 1.2em);
+    width: 1em;
+}
+
+.nav .burger:hover #line3 {
+    transform: rotate(-45deg) translate(.4em, -1.2em);
+    width: 1em;
+}
+
+.nav .burger:hover #line2 {
+    transform: translate(-.2em, 0);
+
+}
+
+/*About Us Section*/
+.about {
+    width: inherit;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.about h1 {
+    padding: 0 3.2em 0 3.2em;
+    font-family: 'Bad Script', cursive;
+    font-size: 3em;
+}
+
+.about p {
+    padding: 0 8em 0 8em;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+
+}
+
+/*Banner 2 Section*/
+.banner-2 {
+    background: url("banner-2-o.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+/*Life-Style Section*/
+.life-style {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.life-style .head h1 {
+    font-size: 3em;
+    margin-top: 3em;
+    line-height: .1em;
+    padding-left: 2em;
+    padding-right: 2.5em;
+    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+}
+
+.life-style .head hr {
+    width: 35em;
+    margin-left: 9em;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    transition: ease-in-out .5s;
+    font-weight: bolder;
+
+}
+
+.life-style .head:hover hr {
+    margin-left: 6em;
+    width: 40em;
+    transform: translateX(-2em);
+}
+
+.life-style .content {
+    width: 100%;
+    height: inherit;
+    display: block;
+
+}
+
+.content .row {
+    width: 100%;
+    height: inherit;
+}
+
+/*Overhead Panel Section*/
+
+.content .row .content-panel {
+    width: 100vw;
+    height: 36em;
+    background-color: rgb(210, 215, 211);
+    position: absolute;
+    transition: ease-in-out .5s;
+    display: none;
+
+}
+
+.content .row .content-panel .row-1 {
+    margin-top: 2em;
+    width: 100%;
+    height: 4em;
+    margin-bottom: 0;
+}
+
+.content .row .content-panel .row-1 .col {
+    padding: 0 5em;
+    width: 50%;
+
+}
+
+.content .row .content-panel .row-1 .col h1 {
+    padding-top: 2em;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+}
+
+.content .row .content-panel .row-1 .col .drop {
+    display: inline;
+    position: absolute;
+    right: 3em;
+    transform: translateY(-1em);
+}
+
+.content .row .content-panel .row-1 .col .drop div {
+    height: .1em;
+    width: 3em;
+    background-color: black;
+    transition: ease-in-out .5s;
+}
+
+.content .row .content-panel .row-1 .col .drop .line-1 {
+    transform: rotate(45deg);
+}
+
+.content .row .content-panel .row-1 .col .drop .line-2 {
+    transform: rotate(-45deg);
+}
+
+.content .row .content-panel .row-1 .col a:hover .line-1 {
+    transform: rotate(0deg);
+}
+
+.content .row .content-panel .row-1 .col a:hover .line-2 {
+    transform: rotate(0deg);
+}
+
+.content .row .content-panel .row-2 {
+    margin-top: 2em;
+    width: 100%;
+    height: 4em;
+    margin-bottom: 0;
+}
+
+.content .row .content-panel .row-2 .col-2 {
+    display: inline;
+    width: 30%;
+    float: left;
+}
+
+.content .row .content-panel .row-2 .col-2 .row p {
+    padding: 0 .5em;
+    font-size: 1.4em;
+}
+
+.content .row .content-panel .row-2 .col-10 {
+    display: inline;
+    width: 70%;
+    float: right;
+
+}
+
+.content .row .content-panel .row-2 .col-10 .row {
+    display: inline;
+    float: left;
+    width: 33%;
+
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col {
+    width: 15em;
+    height: 8em;
+    margin: 0;
+    padding: 0;
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col img {
+    width: 15em;
+    height: 8em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: .4;
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col .sub-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out .5s;
+    z-index: 4;
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col .sub-content h3 {
+    padding-top: 4em;
+    padding-left: 1em;
+    transition: ease-in-out .5s;
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col .sub-content h3 a {
+    text-decoration: none;
+    color: rgb(46, 49, 49);
+    transition: ease-in-out .5s;
+
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col .sub-content:hover {
+    background-color: rgba(218, 223, 225, .7);
+}
+
+.content .row .content-panel .row-2 .col-10 .row .col .sub-content:hover h3 a {
+    color: rgb(96, 99, 99);
+}
+
+/*Card Section*/
+
+.content .row .col .card {
+    width: 100%;
+    height: inherit;
+    cursor: pointer;
+}
+
+.content .row .col .card .card-img {
+
+}
+
+.content .row .col .card .card-img img {
+    width: 100%;
+    height: 28em;
+}
+
+.content .row .col .card .card-content {
+    padding: 1em 5em 1em 5em;
+    margin-bottom: 4em;
+    line-height: 1em;
+    transition: ease-in-out .5s;
+    background-color: transparent;
+}
+
+.content .row .col .card .card-content hr {
+    margin-left: 5em;
+    width: 30em;
+    transition: ease-in-out .5s;
+}
+
+.content .row .col .card .card-content:hover {
+
+    background-color: rgba(218, 223, 225, .7);
+}
+
+.content .row .col .card .card-content:hover hr {
+    margin-left: 3em;
+    width: 40em;
+    transform: translateX(-2em);
+}
+
+.content .row .col .card .card-content h2 {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.content .row .col .card .card-content p {
+    font-size: 1em;
+    margin-left: .2em;
+}
+
+/*Glossary Section*/
+
+.glossary {
+    width: 100%;
+    height: 24em;
+    background: url("Glossary.png") fixed no-repeat;
+    background-size: cover;
+
+}
+
+.glossary .row {
+    height: 80%;
+}
+
+.glossary .row .col {
+    display: inline;
+    float: left;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 5em;
+    height: 100%;
+}
+
+.glossary .row #col-1 {
+    width: 60%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.glossary .row #col-1 .content h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.glossary .row #col-2 {
+    width: 40%;
+    background-color: rgba(171, 183, 183, .5);
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.glossary .row #col-2 .form-container input {
+    font-family: 'Quicksand', sans-serif;
+    padding: .55em 4em .55em 4em;
+    margin-top: .5em;
+    border: none;
+    font-weight: bold;
+    border-radius: .5em;
+}
+
+.glossary .row #col-2 .form-container input[type=submit] {
+    background-color: rgb(108, 122, 137);
+    padding: .7em 4em .7em 4em;
+    color: rgb(210, 215, 211);
+    transition: ease-in-out .5s;
+}
+
+.glossary .row #col-2 .form-container input[type=submit]:hover {
+    background-color: transparent;
+    padding: .6em 4em .6em 4em;
+    color: rgb(108, 122, 137);
+    border: .1em solid rgb(108, 122, 137);
+}
+
+footer {
+    text-align: right;
+    line-height: .5em;
+    font-size: .7em;
+    padding-right: 12em;
+    background: linear-gradient(to bottom, #fff, #ebf1f3, #DAE0E2, #DAE0E2, #A4B0BD);
+    height: 5em;
+    margin: 0;
+}
+
+footer h3 {
+    padding-top: 1em;
+    line-height: .1em;
+    font-weight: lighter;
+}
+
+footer a {
+    text-decoration: none;
+    color: #586776;
+}
