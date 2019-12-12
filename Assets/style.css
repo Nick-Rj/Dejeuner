@@ -6,13 +6,70 @@
 * {
     scroll-behavior: smooth;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 /*Body Section*/
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+/*Beginning Animation*/
+.beg-animation {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    display: none;
+}
+
+.beg-animation #GC-1 {
+    position: absolute;
+    color: red;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 5em;
+    top: 50%;
+    margin-top: -2.5%;
+    left: 50%;
+    margin-left: -2.5em;
+}
+.beg-animation #GC-2 {
+    position: absolute;
+    color: orange;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 5em;
+    top: 50%;
+    margin-top: -2.5%;
+    left: 50%;
+    margin-left: -2.5em;
+}
+.beg-animation #GC-3 {
+    position: absolute;
+    color: orangered;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 5em;
+    top: 50%;
+    margin-top: -2.5%;
+    left: 50%;
+    margin-left: -2.5em;
+}
+
+.beg-animation #GC-4{
+    position: absolute;
+    width: 30em;
+    height: 15em;
+    top: 50%;
+    margin-top: -7.5em;
+    left: 50%;
+    margin-left: -15em;
 }
 
 /*Navigation Panel Section*/
@@ -105,6 +162,7 @@ nav {
     height: 36em;
     background-color: rgba(218, 223, 225, .7);
     display: none;
+    z-index: 5;
 
 }
 
@@ -115,6 +173,7 @@ nav .burger {
     transition: ease-in-out .25s;
     margin-right: .5em;
     margin-top: 2em;
+    cursor: pointer;
 
 }
 
@@ -157,6 +216,7 @@ nav button {
     margin-left: .4em;
     color: #96281b;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 /*Main Container*/
@@ -168,7 +228,7 @@ nav button {
 
 /*Banner Section*/
 
-.banner-small{
+.banner-small {
     background: url("banner-small.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
@@ -177,7 +237,7 @@ nav button {
 
 }
 
-.banner-small ul{
+.banner-small ul {
     margin: 0;
     padding-top: 5em;
     padding-right: 5em;
@@ -186,7 +246,7 @@ nav button {
 
 }
 
-.banner-small ul li{
+.banner-small ul li {
     font-size: 1.5em;
     padding-top: 2em;
     font-family: 'Bad Script', cursive;
@@ -198,6 +258,7 @@ nav button {
     background-size: cover;
     width: 100%;
     height: 95vh;
+    z-index: 1;
 }
 
 .banner .transparent {
@@ -226,39 +287,13 @@ nav button {
     height: 7em;
 }
 
-#logo1 {
-    z-index: 1;
-    color: #45CE30;
-    font-weight: lighter;
-}
-
-#logo2 {
-    z-index: 2;
-    color: #FFF222;
-    opacity: .7;
-    font-weight: normal;
-}
-
-#logo3 {
-    z-index: 3;
-    color: #DAE0E2;
-    opacity: .3;
-    font-weight: bold;
-}
-
-#logo4 {
-    z-index: 4;
-    color: #EA7773;
-    opacity: .2;
-    font-weight: bolder;
-}
-
 /*Navigation Styling*/
 
 .nav {
     position: absolute;
     top: 2em;
     right: 5em;
+    z-index: 2;
 }
 
 .nav button {
@@ -272,6 +307,7 @@ nav button {
     transition: ease-in-out .5s;
     font-size: 1em;
     outline: none;
+    cursor: pointer;
 
 }
 
@@ -287,6 +323,7 @@ nav button {
     float: right;
     border: 2px solid #D63031;
     border-radius: .5em;
+    cursor: pointer;
     transition: ease-in-out .25s;
 
 }
@@ -429,7 +466,7 @@ nav button {
 .content .row .content-panel .row-1 .col .drop {
     display: inline;
     position: absolute;
-    right: 3em;
+    right: 10em;
     transform: translateY(-1em);
 }
 
@@ -476,8 +513,9 @@ nav button {
 
 .content .row .content-panel .row-2 .col-10 {
     display: inline;
-    width: 70%;
+    width: 60%;
     float: right;
+    margin-right: 6em;
 
 }
 
@@ -496,7 +534,7 @@ nav button {
 }
 
 .content .row .content-panel .row-2 .col-10 .row .col img {
-    width: 15em;
+    width: 12em;
     height: 8em;
     margin: 0;
     padding: 0;
@@ -593,7 +631,7 @@ nav button {
 .glossary {
     width: 100%;
     height: 24em;
-    background: url("Glossary.png") fixed center no-repeat;
+    background: url("Glossary.png") fixed no-repeat;
     background-size: cover;
 
 }
@@ -650,6 +688,8 @@ nav button {
     border: .1em solid rgb(108, 122, 137);
 }
 
+/*Footer Styling*/
+
 footer {
     text-align: right;
     line-height: .5em;
@@ -662,6 +702,7 @@ footer {
 
 footer h3 {
     padding-top: 1em;
+    padding-right: 7em;
     line-height: .1em;
     font-weight: lighter;
 }
