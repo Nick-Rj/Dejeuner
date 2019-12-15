@@ -55,14 +55,16 @@ function hideNavPanel(e) {
 
 // Toggling Sub-panels
 
-function showPanel(e1) {
+function showPanel(e1,e2) {
     document.getElementById(e1).style.display="block";
     document.getElementById('side-nav').style.transform="translateX(10em)";
+    document.getElementById(e2).style.visibility='hidden';
 }
 
-function hidePanel(e1) {
+function hidePanel(e1,e2) {
 
     document.getElementById(e1).style.display="none";
     document.getElementById('side-nav').style.transform="translateX(0)";
+    document.getElementById(e2).style.visibility='visible';
 }
 
