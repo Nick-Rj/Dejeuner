@@ -411,6 +411,7 @@ nav button {
     display: inline;
     position: absolute;
     right: 10em;
+    cursor: pointer;
     transform: translateY(-1em);
 }
 
