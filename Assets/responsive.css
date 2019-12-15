@@ -743,6 +743,10 @@
         width: 100%;
         height: 42vh;
     }
+    .content .row .col .card .card-img img:hover {
+        width: 100%;
+        transform: translateX(0);
+    }
 
     .content .row .col .card .card-content {
         padding: .5em 2em .5em 2em;
@@ -1208,6 +1212,11 @@
         width: 100%;
         height: 35vh;
     }
+    .content .row .col .card .card-img img:hover {
+        width: 100%;
+        transform: translateX(0);
+    }
+
 
     .content .row .col .card .card-content {
         padding: .5em 2em .5em 2em;
